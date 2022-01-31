@@ -9,9 +9,16 @@
 	<description>
 		<en>
 		<![CDATA[
+		This mods adds an acoustic warning to your motorized vehicle.
+		Warning starts in case your tank level is below 20%.
+		It works for diesel, methane and electric engines.
 		]]></en>
 		<de>
 		<![CDATA[
+		Akustische Tankwarnung bei weniger als 20% Tankinhalt.
+		Das ganze funktioniert für Diesel-, Methan- und Elektromotoren.
+		
+		Ihr erhaltet somit eine akustische Warnung bevor ihr mit eurem Fahrzeug liegen bleibt.
 		]]></de>
 	</description>
 	<multiplayer supported="true"/>

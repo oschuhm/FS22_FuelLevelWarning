@@ -62,37 +62,37 @@ function fuelLevelWarning:onUpdate(dt)
 			self.currentFuelPercentage = math.floor(fuelLevelPercentage+0.5)
 			
 			if self.currentFuelPercentage ~= self.lastPercentageWarned and self.beepFuelActive then
-					print ("DEBUG: Deactivate 5sec BEEP - Percentage Changed - Revalidate")
-					print ("DEBUG: self.currentFuelPercentage: "..self.currentFuelPercentage)
-					print ("DEBUG: self.lastPercentageWarned: "..self.lastPercentageWarned)
+					--print ("DEBUG: Deactivate 5sec BEEP - Percentage Changed - Revalidate")
+					--print ("DEBUG: self.currentFuelPercentage: "..self.currentFuelPercentage)
+					--print ("DEBUG: self.lastPercentageWarned: "..self.lastPercentageWarned)
 					stopSample(FuelBeepSound5,0,0)
 					self.beepFuelActive = false
 			end			
 			 
 			if fuelLevelPercentage <= 5 then
 				if self.beepFuelActive == false then
-				  print ("DEBUG: Activate 5sec BEEP - Permanent Loop")
+				  --print ("DEBUG: Activate 5sec BEEP - Permanent Loop")
 				  playSample(FuelBeepSound5 ,0,self.fuelwarnvolume ,1 ,0 ,0)
 				  self.lastPercentageWarned = math.floor(fuelLevelPercentage+0.5)
 				  self.beepFuelActive = true
 				end
 			elseif fuelLevelPercentage <= 15 then
 				if self.beepFuelActive == false then
-				  print ("DEBUG: Activate 5sec BEEP - Play Twice")
+				  --print ("DEBUG: Activate 5sec BEEP - Play Twice")
 				  playSample(FuelBeepSound5 ,2,self.fuelwarnvolume ,1 ,0 ,0)
 				  self.lastPercentageWarned = math.floor(fuelLevelPercentage+0.5)
 				  self.beepFuelActive = true
 				end
 			elseif fuelLevelPercentage <= 20 then
 				if self.beepFuelActive == false then
-				  print ("DEBUG: Activate 5sec BEEP - Play Once")
+				  --print ("DEBUG: Activate 5sec BEEP - Play Once")
 				  playSample(FuelBeepSound5 ,1,self.fuelwarnvolume ,1 ,0 ,0)
 				  self.lastPercentageWarned = math.floor(fuelLevelPercentage+0.5)
 				  self.beepFuelActive = true
 				end
 			else
 				if self.beepFuelActive == true then
-					print ("DEBUG: Deactivate 5sec BEEP")
+					--print ("DEBUG: Deactivate 5sec BEEP")
 					stopSample(FuelBeepSound5,0,0)
 					self.beepFuelActive = false
 				end
@@ -100,7 +100,7 @@ function fuelLevelWarning:onUpdate(dt)
 		end
 	else
 		if self.beepFuelActive == true then
-			print ("DEBUG: Deactivate 5sec BEEP - no active vehicle")
+			--print ("DEBUG: Deactivate 5sec BEEP - no active vehicle")
 			stopSample(FuelBeepSound5,0,0)
 			self.beepFuelActive = false
 		end
