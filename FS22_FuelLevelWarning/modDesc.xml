@@ -1,31 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="61">
-
-   <author>LS-Farmers</author>
-   	
-	<version>0.0.0.1</version>
-   
-    <title>
+	<author>LS-Farmers</author>
+	<version>1.0.0.0</version>
+	<title>
 		<en>Fuellevel Warning</en>
 		<de>Tankwarnung</de>
-    </title>
-	
-    <description>
+	</title>
+	<description>
 		<en>
 		<![CDATA[
-		]]>
-		</en>
-		
+		]]></en>
 		<de>
 		<![CDATA[
-		]]>
-		</de>
- 	</description>	
-    <multiplayer supported="true"/>
+		]]></de>
+	</description>
+	<multiplayer supported="true"/>
 	<iconFilename>icon.dds</iconFilename>
-	
 	<extraSourceFiles>
-        <sourceFile filename="register.lua" />
-    </extraSourceFiles>
-
+		<sourceFile filename="register.lua"/>
+	</extraSourceFiles>
 </modDesc>
