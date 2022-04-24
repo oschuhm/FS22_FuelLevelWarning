@@ -6,7 +6,7 @@
 --
 
 if g_specializationManager:getSpecializationByName('fuelLevelWarning') == nil then
-    g_specializationManager.addSpecialization('fuelLevelWarning', 'fuelLevelWarning', 'fuelLevelWarning', Utils.getFilename('fuelLevelWarning.lua', g_currentModDirectory))
+    g_specializationManager:addSpecialization('fuelLevelWarning', 'fuelLevelWarning', Utils.getFilename('fuelLevelWarning.lua', g_currentModDirectory), nil)
 end
 
 for vehicleTypeName, vehicleType in pairs(g_vehicleTypeManager.types) do 

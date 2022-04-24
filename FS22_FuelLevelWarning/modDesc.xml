@@ -1,25 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="64">
+<modDesc descVersion="65">
   <author>LS-Farmers</author>
-  <version>1.0.0.0</version>
+  <version>1.0.0.1</version>
   <title>
     <en>Fuel Level Warning</en>
     <de>Tankwarnung</de>
   </title>
   <description>
     <en>
-    <![CDATA[
-    This mods adds an acoustic warning to your motorized vehicle.
-    Warning starts in case your tank level is below 20%.
-    It works for diesel, methane and electric engines.
-    ]]></en>
+    <![CDATA[This mods adds an acoustic warning to your motorized vehicle.
+Warning starts in case your tank level is below 20%.
+It works for diesel, methane and electric engines.
+
+Update 1.0.0.1
+Small adaptions for patch 1.4 and above
+]]></en>
     <de>
-    <![CDATA[
-    Akustische Tankwarnung bei weniger als 20% Tankinhalt.
-    Das ganze funktioniert für Diesel-, Methan- und Elektromotoren.
-    
-    Ihr erhaltet somit eine akustische Warnung bevor ihr mit eurem Fahrzeug liegen bleibt.
-    ]]></de>
+    <![CDATA[Akustische Tankwarnung bei weniger als 20% Tankinhalt.
+Das ganze funktioniert für Diesel-, Methan- und Elektromotoren.
+Ihr erhaltet somit eine akustische Warnung bevor ihr mit eurem Fahrzeug liegen bleibt.
+
+Update 1.0.0.1
+Kleinere Anpassungen für Patch 1.4
+]]></de>
   </description>
   <multiplayer supported="true"/>
   <iconFilename>modIcon.dds</iconFilename>
